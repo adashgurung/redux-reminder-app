@@ -1,0 +1,63 @@
+.button {
+  height: 3rem;
+  width: 10rem;
+  padding: 15px;
+  margin: 10px;
+  color: rgb(255, 255, 255);
+  background: #8f44fd;
+  border-radius: 0.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 10px;
+  border: none;
+  font-weight: bold;
+  font-variant: small-caps;
+  transition: 0.5s;
+}
+
+.button::onfocus {
+  content: "hey";
+}
+
+.button1 {
+  transition: 0.5s;
+  height: 3rem;
+  width: 10rem;
+  padding: 15px;
+  margin: 10px;
+  color: rgb(255, 255, 255);
+  background: #8f44fd;
+  border-radius: 0.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 10px;
+  border: none;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+/* make hover disable when button disable */
+.button:hover:enabled,
+.button1:hover {
+  background-color: white;
+  cursor: pointer;
+  color: #8f44fd;
+  text-shadow: 0 0 30px #535353;
+}
+/* another way */
+/* make hover disable when button disable */
+/* .button[disabled] {
+  pointer-events: none;
+} */
+
+.buttonDisabled {
+  color: #666666;
+  background-color: #cccccc;
+}
+
+/* button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+} */
